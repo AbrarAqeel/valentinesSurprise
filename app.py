@@ -83,7 +83,7 @@ st.markdown(
 )
 
 # Title and romantic caption
-st.title("❤️ Happy Valentine's Day Honey! ❤️")
+st.title("❤️Happy Valentine's Day Honey!❤️")
 st.caption("Join our hearts, my love! 💖")
 
 # Maze layout (0 = empty, 1 = wall/obstacle, 2 = player, 3 = goal)
