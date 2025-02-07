@@ -84,7 +84,7 @@ st.markdown(
 
 # Title and romantic caption
 st.title("❤️ Valentine's Maze Game ❤️")
-st.caption("Find your way to my heart, my love! 💖")
+st.caption("Join our hearts, my love! 💖")
 
 # Maze layout (0 = empty, 1 = wall/obstacle, 2 = player, 3 = goal)
 maze = np.array([
@@ -161,4 +161,4 @@ with col2:
 # Check if the player won
 if check_win():
     st.balloons()
-    st.success("🎉 You found my heart! I love you! 💖")
+    st.success("🎉 You found my heart! I love you my sugar plump cupcake! 💖")
