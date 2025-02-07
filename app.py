@@ -42,8 +42,7 @@ st.markdown(
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        margin-left: 20px;
-        margin-top: 20px;
+        margin: 20px 0;
     }
     .legend-item {
         display: flex;
@@ -71,10 +70,8 @@ st.markdown(
     /* Button container */
     .button-container {
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
-        margin-left: 20px;
+        align-items: center;
         margin-top: 20px;
     }
     </style>
@@ -115,6 +112,7 @@ def move_player(direction):
         st.session_state.player_pos[1] -= 1
     elif direction == "Right" and maze[x][y + 1] != 1:
         st.session_state.player_pos[1] += 1
+    st.experimental_rerun()  # Force rerun to update the maze immediately
 
 # Check if the player reached the goal
 def check_win():
@@ -140,23 +138,28 @@ def display_legend():
     st.markdown("<div class='legend-item'>⬜ Empty</div>", unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
-# Layout for maze, legend, and buttons
-col1, col2 = st.columns([3, 1])
+# Layout for mobile-friendly design
+col1, col2 = st.columns([1, 1])
 with col1:
     display_maze()
 with col2:
     display_legend()
-    # Buttons for movement (placed beneath the legend)
-    st.markdown("<div class='button-container'>", unsafe_allow_html=True)
+
+# Buttons for movement (placed below the maze and legend)
+st.markdown("<div class='button-container'>", unsafe_allow_html=True)
+col_left, col_mid, col_right = st.columns([1, 1, 1])
+with col_left:
     if st.button("⬆️ Up"):
         move_player("Up")
+with col_mid:
     if st.button("⬅️ Left"):
         move_player("Left")
     if st.button("➡️ Right"):
         move_player("Right")
+with col_right:
     if st.button("⬇️ Down"):
         move_player("Down")
-    st.markdown("</div>", unsafe_allow_html=True)
+st.markdown("</div>", unsafe_allow_html=True)
 
 # Check if the player won
 if check_win():
