@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 
 # Set page configuration
-st.set_page_config(page_title="Valentine's Maze Game", page_icon=❤️", layout="centered")
+st.set_page_config(page_title="Valentine's Maze Game", page_icon="❤️", layout="centered")
 
 # Custom CSS for Valentine's theme with Lily flowers
 st.markdown(
