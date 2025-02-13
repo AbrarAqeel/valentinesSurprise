@@ -9,7 +9,7 @@ st.markdown(
     """
     <style>
     body {
-        background: url('flowers.png') no-repeat center center fixed;
+        background: url('https://images.unsplash.com/photo-1561948955-570b270e7c36') no-repeat center center fixed;
         background-size: cover;
         color: white;
         font-family: 'Arial', sans-serif;
@@ -57,7 +57,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.image("flowers.png", width=200)
+st.image("flowers.jpg", width=200)
 st.title("❤️ Happy Valentine's, My Love! ❤️")
 st.caption("May our love bloom like your favorite lilies! 🌸")
 
