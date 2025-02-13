@@ -57,7 +57,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.image("flowers.png", use_column_width=True)
+st.image("flowers.png", use_column_width=False)
 st.title("❤️ Happy Valentine's, My Love! ❤️")
 st.caption("May our love bloom like your favorite lilies! 🌸")
 
