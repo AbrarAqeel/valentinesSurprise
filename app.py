@@ -58,8 +58,8 @@ st.markdown(
 )
 
 
-st.title("❤️ Happy Valentine's, My Love! ❤️")
-st.caption("May our love bloom like your favorite lilies! 🌸")
+st.title("❤️Happy Valentine's, My Love!❤️")
+st.caption("May our love bloom like these flowers! 🌸")
 st.image("flowers.png", width=800)
 
 maze = np.array([
@@ -117,4 +117,4 @@ with col2:
 
 if check_win():
     st.balloons()
-    st.success("🎉 You found my heart among the lilies! Love you always! 💖")
+    st.success("🎉 You found my heart! Love you always! 💖")
