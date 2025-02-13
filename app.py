@@ -57,9 +57,10 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.image("flowers.png", width=800)
+
 st.title("❤️ Happy Valentine's, My Love! ❤️")
 st.caption("May our love bloom like your favorite lilies! 🌸")
+st.image("flowers.png", width=800)
 
 maze = np.array([
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
