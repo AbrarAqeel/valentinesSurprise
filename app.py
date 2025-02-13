@@ -7,10 +7,10 @@ st.set_page_config(page_title="Valentine's Maze Game", page_icon="❤️", layou
 # Custom CSS for Valentine's theme with Lily flowers
 st.markdown(
     """
-    <div style="display: flex; justify-content: center;">
+    <style>
+        <div style="display: flex; justify-content: center;">
         <img src="flowers.png" width="200">
     </div>
-    <style>
     body {
         background: url('https://images.unsplash.com/photo-1561948955-570b270e7c36') no-repeat center center fixed;
         background-size: cover;
