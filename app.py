@@ -57,7 +57,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.image("https://upload.wikimedia.org/wikipedia/commons/2/23/Lilium_candidum_%28Madonna_Lily%29.jpg", width=200)
+st.image("flowers.png", width=200)
 st.title("❤️ Happy Valentine's, My Love! ❤️")
 st.caption("May our love bloom like your favorite lilies! 🌸")
 
