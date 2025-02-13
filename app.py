@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 
 # Set page configuration
-st.set_page_config(page_title="Valentine's Maze Game", page_icon=❤️", layout="centered")
+st.set_page_config(page_title="Valentine's Maze Game", page_icon="❤️", layout="centered")
 
 # Custom CSS for Valentine's theme with Lily flowers
 st.markdown(
@@ -57,7 +57,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.image("flowers.png", width=200)
+st.image("https://upload.wikimedia.org/wikipedia/commons/2/23/Lilium_candidum_%28Madonna_Lily%29.jpg", width=200)
 st.title("❤️ Happy Valentine's, My Love! ❤️")
 st.caption("May our love bloom like your favorite lilies! 🌸")
 
