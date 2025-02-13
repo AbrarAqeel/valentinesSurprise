@@ -57,10 +57,16 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.image("flowers.png", width=200)
+# Centered Lily image
+st.markdown(
+    "<div style='text-align: center;'><img src='flowers.png' width='200'></div>",
+    unsafe_allow_html=True
+)
+
 st.title("❤️ Happy Valentine's, My Love! ❤️")
 st.caption("May our love bloom like your favorite lilies! 🌸")
 
+# Maze layout
 maze = np.array([
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
     [1, 2, 0, 0, 1, 0, 0, 0, 0, 1],
