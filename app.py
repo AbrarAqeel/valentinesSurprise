@@ -59,6 +59,16 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+# Add background music
+st.markdown(
+    """
+    <audio autoplay loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+    """,
+    unsafe_allow_html=True
+)
+
 # Title
 st.markdown("<h1 class='heart-animation'>❤️ Happy Valentine's, My Love! ❤️</h1>", unsafe_allow_html=True)
 st.caption("Find your way to my heart in this lovely maze! 💖")
