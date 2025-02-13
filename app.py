@@ -9,7 +9,7 @@ st.markdown(
     """
     <style>
     body {
-        background: url('https://images.unsplash.com/photo-1561948955-570b270e7c36') no-repeat center center fixed;
+        background: url('flowers.png') no-repeat center center fixed;
         background-size: cover;
         color: white;
         font-family: 'Arial', sans-serif;
